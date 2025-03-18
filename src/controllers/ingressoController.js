@@ -5,7 +5,7 @@ const getAllIngressos = async (req, res) => {
         const ingressos = await ingressoModel.getIngressos();
         res.json(ingressos);
     } catch (error) {
-        res.status(404).json({ message: "Erro ao buscar ingressos."});
+        res.status(404).json({ message: "Erro ao buscar ingressos." });
     }
 };
 
@@ -28,9 +28,10 @@ const createIngresso = async (req, res) => {
         res.status(201).json(newIngresso);
     } catch (error) {
         console.log(error);
-        res.status(500).json({ message: "Erro ao comprar ingressso." });
+        res.status(500).json({ message: "Erro ao criar ingresso." });
     }
 };
+
 
 const updateIngresso = async (req, res) => {
     try {
