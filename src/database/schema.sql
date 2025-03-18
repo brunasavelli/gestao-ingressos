@@ -1,5 +1,5 @@
 CREATE TABLE ingressos (
-    id SERIAL(PK),
+    id SERIAL PRIMARY KEY,
     evento VARCHAR(255),
     local VARCHAR(255),
     data_evento DATE,
